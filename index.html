@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Know Me?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <h1>Do You Know <em>Me?</em></h1>
+  </div>
+
+  <div class="card-body">
+
+    <!-- Q1 -->
+    <div class="panel" id="panel-0">
+      <p class="question-label">Question 01</p>
+      <p class="question-text">What is my birthplace?</p>
+      <div class="input-row">
+        <input type="text" placeholder="Type your answer…" id="input-0" autocomplete="off">
+        <button class="submit-btn" id="btn-0" onclick="submitAnswer(0)">Check</button>
+      </div>
+      <div class="feedback" id="feedback-0"></div>
+    </div>
+
+    <div class="panel-divider"></div>
+
+    <!-- Q2 -->
+    <div class="panel" id="panel-1">
+      <p class="question-label">Question 02</p>
+      <p class="question-text">What is my hair colour?</p>
+      <div class="input-row">
+        <input type="text" placeholder="Type your answer…" id="input-1" autocomplete="off">
+        <button class="submit-btn" id="btn-1" onclick="submitAnswer(1)">Check</button>
+      </div>
+      <div class="feedback" id="feedback-1"></div>
+    </div>
+
+    <div class="panel-divider"></div>
+
+    <!-- Q3 -->
+    <div class="panel" id="panel-2">
+      <p class="question-label">Question 03</p>
+      <p class="question-text">What is my favourite sport?</p>
+      <div class="input-row">
+        <input type="text" placeholder="Type your answer…" id="input-2" autocomplete="off">
+        <button class="submit-btn" id="btn-2" onclick="submitAnswer(2)">Check</button>
+      </div>
+      <div class="feedback" id="feedback-2"></div>
+    </div>
+
+    <!-- Submit trigger -->
+    <div class="results-trigger">
+      <button class="final-submit-btn show" id="final-submit-btn" onclick="submitAll()">Submit Answers →</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.min.js"></script>
+
+</body>
+</html>
