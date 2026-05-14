@@ -4,7 +4,7 @@ const path = require('path');
 const url  = require('url');
 
 const PORT    = 3001;
-const BACKEND = 'http://210.54.39.37:6767';
+const BACKEND = 'http://whatismattsbirthday.com';
 
 const server = http.createServer((req, res) => {
   const parsed = url.parse(req.url, true);
